@@ -115,10 +115,6 @@ ol {
   color: #fff;
 }
 
-.content__accent {
-  color: #545050;
-}
-
 .content__list-container {
   display: flex;
   position: relative;
@@ -265,8 +261,11 @@ ol {
   opacity: 1;
 }
 
-.search-form__label-text:hover {
+.search-form__label:has(.search-form__checkbox):hover .search-form__label-text {
   text-decoration: underline;
+}
+
+.search-form__label:has(.search-form__checkbox) {
   cursor: pointer;
 }
 
@@ -283,7 +282,6 @@ ol {
   font-weight: 700;
   font-size: 18px;
   text-align: center;
-  color: #fff;
 }
 
 .search-form__submit-button {
