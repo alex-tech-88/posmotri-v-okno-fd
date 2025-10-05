@@ -59,11 +59,6 @@ ol {
   justify-content: space-between;
   gap: 30px;
   width: 1140px;
-  min-height: 534px;
-}
-
-.result {
-  inline-size: 710px;
 }
 
 .result__video-container {
@@ -71,10 +66,10 @@ ol {
   height: 386px;
   margin-block-end: 16px;
   position: relative;
-  background: #000;
-  overflow: hidden;
 }
+
 .result__video {
+  object-position: center;
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
@@ -121,7 +116,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   flex: 1 1 auto;
-  block-size: 300px;
+  height: 300px;
   overflow: auto;
   margin-top: 26px;
 }
@@ -154,7 +149,7 @@ ol {
   font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  /*margin-block-end: 11px;*/
+  margin-block-end: 5px;
 }
 
 .content__card-link {
@@ -220,8 +215,8 @@ ol {
 
 .search-form__textfield {
   appearance: none;
-  inline-size: 225px;
-  padding: 4px 0;
+  min-width: 225px;
+  padding: 3px 0;
   background: transparent;
   color: #fff;
   font: inherit;
@@ -282,17 +277,16 @@ ol {
   font-weight: 700;
   font-size: 18px;
   text-align: center;
+  block-size: 34px;
 }
 
 .search-form__submit-button {
-  inline-size: 194px;
-  block-size: 34px;
+  min-width: 194px;
   align-self: flex-end;
 }
 
 .more-button {
   inline-size: 100%;
-  block-size: 34px;
   flex: 0 0 34px;
 }
 
